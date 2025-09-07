@@ -229,15 +229,14 @@ function App() {
                 <Code className="w-16 h-16 text-white" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-slate-800 mb-2">Project Name</h3>
+                <h3 className="text-xl font-semibold text-slate-800 mb-2">lass Task Scheduler</h3>
                 <p className="text-slate-600 mb-4">
-                  A comprehensive web application built with React, Node.js, and MongoDB. 
-                  Features real-time updates and responsive design.
+                A student planner with automated course/assignment syncing, dynamic filtering, and one-click calendar exports. Built for speed and simplicity across devices.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">React</span>
-                  <span className="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full">Node.js</span>
-                  <span className="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">MongoDB</span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">HTML5</span>
+                  <span className="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full">CSS3</span>
+                  <span className="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Javascript</span>
                 </div>
                 <div className="flex gap-3">
                   <a href="#" className="flex items-center text-blue-600 hover:text-blue-700 transition-colors">
