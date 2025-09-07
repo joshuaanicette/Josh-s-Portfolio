@@ -44,8 +44,8 @@ function App() {
                 Computer Engineer & Software Developer
               </p>
               <p className="text-lg text-slate-500 mb-8 max-w-2xl">
-                Passionate about creating exceptional digital experiences through clean code, 
-                innovative solutions, and user-centered design. Ready to bring value to your team.
+                Software engineer by craft, computer engineer by toolkit—bridging cloud services with embedded systems. 
+                Ready to bring clean code, thoughtful design, and real-world reliability to your team.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <button className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-lg">
