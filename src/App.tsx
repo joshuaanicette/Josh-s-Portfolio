@@ -41,7 +41,7 @@ function App() {
                 Hi, I'm <span className="text-blue-600">Joshua Anicette</span>
               </h1>
               <p className="text-xl lg:text-2xl text-slate-600 mb-6">
-                Full Stack Developer & Problem Solver
+                Computer Engineer & Software Developer
               </p>
               <p className="text-lg text-slate-500 mb-8 max-w-2xl">
                 Passionate about creating exceptional digital experiences through clean code, 
