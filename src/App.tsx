@@ -74,18 +74,16 @@ function App() {
             <div>
               <h3 className="text-2xl font-semibold text-slate-800 mb-6">My Story</h3>
               <p className="text-slate-600 mb-6 leading-relaxed">
-                I'm a passionate developer with [X] years of experience building web applications 
-                that solve real-world problems. I love turning complex challenges into simple, 
-                beautiful solutions that users enjoy.
+              I’m a builder at heart, working across software and hardware design to turn messy, real-world problems into clear, usable tools. 
+              On the software side, I deliver responsive UIs and dependable back ends; on the hardware side, I prototype with microcontrollers and sensors and design systems that bridge devices to the web.
               </p>
               <p className="text-slate-600 mb-6 leading-relaxed">
-                My expertise spans across modern web technologies, with a strong focus on 
-                creating scalable, maintainable code and exceptional user experiences. 
-                I'm always eager to learn new technologies and take on challenging projects.
+              I like owning features end-to-end—scoping requirements, prototyping, measuring impact, and iterating for reliability and great UX. 
+              My interests span full-stack development, embedded systems, and the places they meet (automation, data, and real-time feedback).
               </p>
               <p className="text-slate-600 leading-relaxed">
-                When I'm not coding, you can find me [add your hobbies/interests here], 
-                always seeking inspiration for my next project.
+              I’m exploring roles across software engineering and hardware-software integration. 
+              When I’m not coding or designing, I’m playing basketball and soccer, reading mythology books, and building LEGO.
               </p>
             </div>
 
