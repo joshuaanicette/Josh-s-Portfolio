@@ -227,7 +227,7 @@ function App() {
                 <Code className="w-16 h-16 text-white" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-slate-800 mb-2">lass Task Scheduler</h3>
+                <h3 className="text-xl font-semibold text-slate-800 mb-2">Class Task Scheduler</h3>
                 <p className="text-slate-600 mb-4">
                 A student planner with automated course/assignment syncing, dynamic filtering, and one-click calendar exports. Built for speed and simplicity across devices.
                 </p>
