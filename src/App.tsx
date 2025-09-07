@@ -149,30 +149,30 @@ function App() {
             <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
                 <div>
-                  <h3 className="text-xl font-semibold text-slate-800">Senior Full Stack Developer</h3>
-                  <p className="text-blue-600 font-medium">Company Name</p>
+                  <h3 className="text-xl font-semibold text-slate-800">Logistics Software Intern</h3>
+                  <p className="text-blue-600 font-medium">Weber Display and Packaging</p>
                 </div>
                 <div className="flex items-center text-slate-500 mt-2 lg:mt-0">
                   <Calendar className="w-4 h-4 mr-2" />
-                  <span>Jan 2023 - Present</span>
+                  <span>March 2025 - September 2025</span>
                 </div>
               </div>
               <div className="flex items-center text-slate-500 mb-4">
                 <MapPin className="w-4 h-4 mr-2" />
-                <span>Remote / New York, NY</span>
+                <span>In-Person / Philadelphia, PA</span>
               </div>
               <ul className="space-y-2 text-slate-600">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Led development of flagship web application serving 10k+ users
+                  Used KiwiPlan ERP system to enter and validate 50+ bills of lading daily, improving packaging distribution accuracy by 15% and reducing shipment cycle time by 10% in a high-throughput logistics environment
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Improved application performance by 40% through optimization strategies
+                  Executed backend trailer load transfers for 20+ trailers per shift within KiwiPlan, streamlining dispatch coordination and achieving a 98% on-time delivery rate while reducing routing errors by 20%
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Mentored junior developers and established coding best practices
+                  Analyzed and modified workflow processes in KiwiPlan, leading a 12% reduction in processing time and improved cross-departmental coordination for box delivery operations
                 </li>
               </ul>
             </div>
