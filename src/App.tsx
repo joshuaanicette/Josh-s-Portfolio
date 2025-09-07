@@ -112,20 +112,20 @@ function App() {
                 </div>
                 <div>
                   <div className="flex justify-between items-center mb-2">
-                    <span className="font-medium text-slate-700">Database Design</span>
-                    <span className="text-sm text-slate-500">80%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2">
-                    <div className="bg-blue-600 h-2 rounded-full w-[80%]"></div>
-                  </div>
-                </div>
-                <div>
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="font-medium text-slate-700">DevOps & Cloud</span>
+                    <span className="font-medium text-slate-700">Hardware Design</span>
                     <span className="text-sm text-slate-500">75%</span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
                     <div className="bg-blue-600 h-2 rounded-full w-[75%]"></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="font-medium text-slate-700">Computer Networking</span>
+                    <span className="text-sm text-slate-500">45%</span>
+                  </div>
+                  <div className="w-full bg-gray-200 rounded-full h-2">
+                    <div className="bg-blue-600 h-2 rounded-full w-[45%]"></div>
                   </div>
                 </div>
               </div>
