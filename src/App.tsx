@@ -330,7 +330,7 @@ function App() {
                   </div>
                   <div>
                     <p className="text-slate-300 text-sm">Email</p>
-                    <p className="text-white font-medium">your.email@example.com</p>
+                    <p className="text-white font-medium">joshuaanicette34@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -339,7 +339,7 @@ function App() {
                   </div>
                   <div>
                     <p className="text-slate-300 text-sm">Phone</p>
-                    <p className="text-white font-medium">+1 (555) 123-4567</p>
+                    <p className="text-white font-medium">+1 (908)-887-4380</p>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -348,7 +348,7 @@ function App() {
                   </div>
                   <div>
                     <p className="text-slate-300 text-sm">Location</p>
-                    <p className="text-white font-medium">Your City, State</p>
+                    <p className="text-white font-medium">Philadelphia, PA</p>
                   </div>
                 </div>
               </div>
