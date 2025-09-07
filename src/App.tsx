@@ -356,15 +356,15 @@ function App() {
               <div className="mt-8">
                 <h4 className="text-white font-semibold mb-4">Follow Me</h4>
                 <div className="flex space-x-4">
-                  <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" 
+                  <a href="https://github.com/joshuaanicette" target="_blank" rel="noopener noreferrer" 
                      className="w-12 h-12 bg-slate-700 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors">
                     <Github className="w-6 h-6 text-white" />
                   </a>
-                  <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer"
+                  <a href="https://www.linkedin.com/in/joshua-anicette-1620a7338/" target="_blank" rel="noopener noreferrer"
                      className="w-12 h-12 bg-slate-700 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors">
                     <Linkedin className="w-6 h-6 text-white" />
                   </a>
-                  <a href="mailto:your.email@example.com"
+                  <a href="mailto:joshuaanicette34@gmail.com"
                      className="w-12 h-12 bg-slate-700 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors">
                     <Mail className="w-6 h-6 text-white" />
                   </a>
