@@ -38,7 +38,7 @@ function App() {
             {/* Hero Content */}
             <div className="flex-1 text-center lg:text-left">
               <h1 className="text-4xl lg:text-6xl font-bold text-slate-800 mb-4">
-                Hi, I'm <span className="text-blue-600">Your Name</span>
+                Hi, I'm <span className="text-blue-600">Joshua Anicette</span>
               </h1>
               <p className="text-xl lg:text-2xl text-slate-600 mb-6">
                 Full Stack Developer & Problem Solver
