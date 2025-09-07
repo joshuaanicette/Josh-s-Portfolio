@@ -413,7 +413,7 @@ function App() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center">
             <p className="text-slate-400">
-              © 2025 Your Name. Built with React and Tailwind CSS.
+              © 2025 Joshua Anicette. Built with React and Tailwind CSS.
             </p>
           </div>
         </div>
