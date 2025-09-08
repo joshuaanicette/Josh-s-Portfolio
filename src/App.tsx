@@ -255,22 +255,22 @@ function App() {
                 <Briefcase className="w-16 h-16 text-white" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-slate-800 mb-2">Another Project</h3>
+                <h3 className="text-xl font-semibold text-slate-800 mb-2">Focus Assitant Tracker</h3>
                 <p className="text-slate-600 mb-4">
                   An e-commerce platform with payment integration, inventory management, 
                   and admin dashboard. Built for scalability and performance.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-3 py-1 bg-yellow-100 text-yellow-700 text-sm rounded-full">JavaScript</span>
-                  <span className="px-3 py-1 bg-red-100 text-red-700 text-sm rounded-full">Express</span>
-                  <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">PostgreSQL</span>
+                  <span className="px-3 py-1 bg-yellow-100 text-yellow-700 text-sm rounded-full">Python</span>
+                  <span className="px-3 py-1 bg-red-100 text-red-700 text-sm rounded-full">Arduino</span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">Raspberry Pi</span>
                 </div>
                 <div className="flex gap-3">
-                  <a href="#" className="flex items-center text-blue-600 hover:text-blue-700 transition-colors">
+                  <a href="https://github.com/joshuaanicette/Focus_Assistant" className="flex items-center text-blue-600 hover:text-blue-700 transition-colors">
                     <Github className="w-4 h-4 mr-1" />
                     <span>Code</span>
                   </a>
-                  <a href="#" className="flex items-center text-blue-600 hover:text-blue-700 transition-colors">
+                  <a href="https://github.com/joshuaanicette/Focus_Assistant/releases/tag/v1.0.0" className="flex items-center text-blue-600 hover:text-blue-700 transition-colors">
                     <ExternalLink className="w-4 h-4 mr-1" />
                     <span>Demo</span>
                   </a>
