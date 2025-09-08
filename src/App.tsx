@@ -255,7 +255,7 @@ function App() {
                 <Briefcase className="w-16 h-16 text-white" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-slate-800 mb-2">Focus Assitant Tracker</h3>
+                <h3 className="text-xl font-semibold text-slate-800 mb-2">Focus Assistant Tracker</h3>
                 <p className="text-slate-600 mb-4">
                   An e-commerce platform with payment integration, inventory management, 
                   and admin dashboard. Built for scalability and performance.
