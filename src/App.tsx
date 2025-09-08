@@ -237,11 +237,11 @@ function App() {
                   <span className="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Javascript</span>
                 </div>
                 <div className="flex gap-3">
-                  <a href="#" className="flex items-center text-blue-600 hover:text-blue-700 transition-colors">
+                  <a href="https://github.com/joshuaanicette/class-task-scheduler" className="flex items-center text-blue-600 hover:text-blue-700 transition-colors">
                     <Github className="w-4 h-4 mr-1" />
                     <span>Code</span>
-                  </a>
-                  <a href="#" className="flex items-center text-blue-600 hover:text-blue-700 transition-colors">
+                    </a>
+                  <a href="https://class-task-scheduler.vercel.app/" className="flex items-center text-blue-600 hover:text-blue-700 transition-colors">
                     <ExternalLink className="w-4 h-4 mr-1" />
                     <span>Demo</span>
                   </a>
