@@ -261,7 +261,7 @@ function App() {
                 Built for edge reliability and low-latency performance.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-3 py-1 bg-yellow-100 text-yellow-700 text-sm rounded-full">Python</span>
+                  <span className="px-3 py-1 bg-yellow-100 text-yellow-700 text-sm rounded-full">Python (Flask)</span>
                   <span className="px-3 py-1 bg-red-100 text-red-700 text-sm rounded-full">Arduino</span>
                   <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">Raspberry Pi</span>
                 </div>
@@ -292,7 +292,7 @@ function App() {
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">HTML</span>
                   <span className="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full">CSS</span>
-                  <span className="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Python(Flask)</span>
+                  <span className="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Python (Flask)</span>
                 </div>
                 <div className="flex gap-3">
                   <a href="https://github.com/joshuaanicette/Ed-s-Invoicing-System-2" className="flex items-center text-blue-600 hover:text-blue-700 transition-colors">
