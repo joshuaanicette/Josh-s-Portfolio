@@ -320,7 +320,7 @@ function App() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">Let's Work Together</h2>
             <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-              Ready to bring your ideas to life? Let's discuss your next project
+            Ready to work and give insight into computer engineering and software development—building reliable systems from silicon to server
             </p>
           </div>
 
