@@ -26,8 +26,12 @@ function App() {
             {/* Profile Image */}
             <div className="flex-shrink-0">
               <div className="relative">
-                <div className="w-64 h-64 bg-gradient-to-br from-blue-100 to-indigo-200 rounded-2xl flex items-center justify-center shadow-xl">
-                  <User className="w-24 h-24 text-blue-600" />
+                <div className="w-64 h-64 rounded 2xl overflow-hidden shadow-xl">
+                  <img
+                    src="S-Stem Sat 415-515pm140 (2).jpg"
+                    alt="Josh's Profile Picture"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-lg">
                   <span className="text-white font-bold text-sm">HIRE</span>
