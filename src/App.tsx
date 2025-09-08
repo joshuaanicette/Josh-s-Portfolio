@@ -257,8 +257,8 @@ function App() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-slate-800 mb-2">Focus Assistant Tracker</h3>
                 <p className="text-slate-600 mb-4">
-                  An e-commerce platform with payment integration, inventory management, 
-                  and admin dashboard. Built for scalability and performance.
+                A focus-tracking assistant with real-time distraction alerts, session analytics, and a web dashboard. 
+                Built for edge reliability and low-latency performance.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-3 py-1 bg-yellow-100 text-yellow-700 text-sm rounded-full">Python</span>
@@ -284,22 +284,22 @@ function App() {
                 <User className="w-16 h-16 text-white" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-slate-800 mb-2">Mobile App</h3>
+                <h3 className="text-xl font-semibold text-slate-800 mb-2">Invoicing System</h3>
                 <p className="text-slate-600 mb-4">
-                  Cross-platform mobile application built with React Native. 
-                  Includes push notifications and offline functionality.
+                An invoicing platform where customers generate PDFs in real time, track sequential IDs, and find records fast. 
+                Built for error reduction and seamless deployments.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">React Native</span>
-                  <span className="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full">Firebase</span>
-                  <span className="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">TypeScript</span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">HTML</span>
+                  <span className="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full">CSS</span>
+                  <span className="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Python</span>
                 </div>
                 <div className="flex gap-3">
-                  <a href="#" className="flex items-center text-blue-600 hover:text-blue-700 transition-colors">
+                  <a href="https://github.com/joshuaanicette/Ed-s-Invoicing-System-2" className="flex items-center text-blue-600 hover:text-blue-700 transition-colors">
                     <Github className="w-4 h-4 mr-1" />
                     <span>Code</span>
                   </a>
-                  <a href="#" className="flex items-center text-blue-600 hover:text-blue-700 transition-colors">
+                  <a href="https://ed-s-invoicing-system-updated.vercel.app/" className="flex items-center text-blue-600 hover:text-blue-700 transition-colors">
                     <ExternalLink className="w-4 h-4 mr-1" />
                     <span>Demo</span>
                   </a>
