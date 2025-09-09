@@ -1,17 +1,54 @@
-import React, { useState } from 'react';
-import { Github, Linkedin, Mail, ExternalLink, MapPin, Calendar, Code, Briefcase, User, Phone } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Github, Linkedin, Mail, ExternalLink, MapPin, Calendar, Code, Briefcase, User, Phone, ChevronDown } from 'lucide-react';
 
 function App() {
   const [isDownloading, setIsDownloading] = useState(false);
   const [downloadError, setDownloadError] = useState<string | null>(null);
+  const [showResumeOptions, setShowResumeOptions] = useState(false);
 
-  const handleDownloadResume = async () => {
+  // Define your two resume options
+  const resumeOptions = [
+    { 
+      name: 'Software Engineering Resume', 
+      filename: 'Joshuas_Software_Engineering_COOP_Resume.pdf',
+      description: 'Full-stack development, web applications, and software architecture',
+      icon: '💻',
+      color: 'from-blue-500 to-purple-600'
+    },
+    { 
+      name: 'Hardware Engineering Resume', 
+      filename: 'Joshuas_Computer_Engineering_COOP_Resume.pdf',
+      description: 'Embedded systems, microcontrollers, and hardware design',
+      icon: '⚡',
+      color: 'from-green-500 to-teal-600'
+    }
+  ];
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (!target.closest('.resume-dropdown')) {
+        setShowResumeOptions(false);
+      }
+    };
+
+    if (showResumeOptions) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [showResumeOptions]);
+
+  const handleDownloadResume = async (filename: string, displayName: string) => {
     setIsDownloading(true);
     setDownloadError(null);
+    setShowResumeOptions(false);
     
     try {
-      // Method 1: If you have a PDF file in your public folder
-      const response = await fetch('/Joshua_Anicette_Resume.pdf');
+      const response = await fetch(`/${filename}`);
       
       if (!response.ok) {
         throw new Error('Resume not found');
@@ -22,22 +59,21 @@ function App() {
       const link = document.createElement('a');
       
       link.href = url;
-      link.download = 'Joshua_Anicette_Resume.pdf';
+      link.download = filename;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
       
-      // Clean up the URL object
       window.URL.revokeObjectURL(url);
     } catch (err) {
-      setDownloadError('Failed to download resume. Please try again.');
+      setDownloadError(`Failed to download ${displayName}. Please try again.`);
       console.error('Download error:', err);
       
-      // Fallback: Simple download from public folder
+      // Fallback
       try {
         const link = document.createElement('a');
-        link.href = '/Joshua_Anicette_Resume.pdf';
-        link.download = 'Joshua_Anicette_Resume.pdf';
+        link.href = `/${filename}`;
+        link.download = filename;
         link.target = '_blank';
         document.body.appendChild(link);
         link.click();
@@ -75,9 +111,9 @@ function App() {
             {/* Profile Image */}
             <div className="flex-shrink-0">
               <div className="relative">
-                <div className="w-64 h-64 rounded 2xl overflow-hidden shadow-xl">
+                <div className="w-64 h-64 rounded-2xl overflow-hidden shadow-xl">
                   <img
-                    src="S-Stem Sat 415-515pm140 (2).jpg"
+                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=400"
                     alt="Josh's Profile Picture"
                     className="w-full h-full object-cover"
                   />
@@ -101,13 +137,39 @@ function App() {
                 Ready to bring clean code, thoughtful design, and real-world reliability to your team.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button 
-                  onClick={handleDownloadResume}
-                  disabled={isDownloading}
-                  className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-lg disabled:bg-blue-400 disabled:cursor-not-allowed"
-                >
-                  {isDownloading ? 'Downloading...' : 'Download Resume'}
-                </button>
+                {/* Resume Download Dropdown */}
+                <div className="resume-dropdown relative">
+                  <button 
+                    onClick={() => setShowResumeOptions(!showResumeOptions)}
+                    disabled={isDownloading}
+                    className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-lg disabled:bg-blue-400 disabled:cursor-not-allowed flex items-center gap-2"
+                  >
+                    {isDownloading ? 'Downloading...' : 'Download Resume'}
+                    <ChevronDown className={`w-4 h-4 transition-transform ${showResumeOptions ? 'rotate-180' : ''}`} />
+                  </button>
+
+                  {/* Dropdown Menu */}
+                  {showResumeOptions && (
+                    <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-xl shadow-2xl border border-gray-200 py-2 z-10">
+                      {resumeOptions.map((option, index) => (
+                        <button
+                          key={index}
+                          onClick={() => handleDownloadResume(option.filename, option.name)}
+                          className="w-full px-4 py-3 text-left hover:bg-gray-50 transition-colors flex items-center gap-3"
+                        >
+                          <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${option.color} flex items-center justify-center text-white text-lg`}>
+                            {option.icon}
+                          </div>
+                          <div className="flex-1">
+                            <p className="font-semibold text-slate-800">{option.name}</p>
+                            <p className="text-sm text-slate-500">{option.description}</p>
+                          </div>
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
                 <a href="#contact" className="px-8 py-3 border-2 border-slate-300 text-slate-700 font-semibold rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors">
                   Get In Touch
                 </a>
