@@ -178,38 +178,6 @@ function App() {
                 </li>
               </ul>
             </div>
-
-            {/* Experience Item 2 */}
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
-                <div>
-                  <h3 className="text-xl font-semibold text-slate-800">Full Stack Developer</h3>
-                  <p className="text-blue-600 font-medium">Previous Company</p>
-                </div>
-                <div className="flex items-center text-slate-500 mt-2 lg:mt-0">
-                  <Calendar className="w-4 h-4 mr-2" />
-                  <span>Jun 2021 - Dec 2022</span>
-                </div>
-              </div>
-              <div className="flex items-center text-slate-500 mb-4">
-                <MapPin className="w-4 h-4 mr-2" />
-                <span>San Francisco, CA</span>
-              </div>
-              <ul className="space-y-2 text-slate-600">
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Built and maintained multiple client-facing applications
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Collaborated with cross-functional teams to deliver projects on time
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Implemented automated testing reducing bugs by 60%
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </section>
