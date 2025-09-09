@@ -113,7 +113,7 @@ function App() {
               <div className="relative">
                 <div className="w-64 h-64 rounded-2xl overflow-hidden shadow-xl">
                   <img
-                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=400"
+                    src="S-Stem Sat 415-515pm140 (2).jpg"
                     alt="Josh's Profile Picture"
                     className="w-full h-full object-cover"
                   />
@@ -464,25 +464,43 @@ function App() {
 
             <div className="bg-slate-700 rounded-xl p-8">
               <h3 className="text-xl font-semibold text-white mb-6">Send a Message</h3>
-              <form className="space-y-4">
+              <form className="space-y-4" onSubmit={(e) => {
+                e.preventDefault();
+                const formData = new FormData(e.target as HTMLFormElement);
+                const name = formData.get('name') as string;
+                const email = formData.get('email') as string;
+                const message = formData.get('message') as string;
+                
+                const subject = `Portfolio Contact from ${name}`;
+                const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+                const mailtoLink = `mailto:joshuaanicette34@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                
+                window.location.href = mailtoLink;
+              }}>
                 <div>
                   <input
+                    name="name"
                     type="text"
                     placeholder="Your Name"
+                    required
                     className="w-full px-4 py-3 bg-slate-600 border border-slate-500 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 transition-colors"
                   />
                 </div>
                 <div>
                   <input
+                    name="email"
                     type="email"
                     placeholder="Your Email"
+                    required
                     className="w-full px-4 py-3 bg-slate-600 border border-slate-500 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 transition-colors"
                   />
                 </div>
                 <div>
                   <textarea
+                    name="message"
                     rows={4}
                     placeholder="Your Message"
+                    required
                     className="w-full px-4 py-3 bg-slate-600 border border-slate-500 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 transition-colors resize-none"
                   ></textarea>
                 </div>
