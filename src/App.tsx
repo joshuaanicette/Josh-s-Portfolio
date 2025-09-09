@@ -135,8 +135,8 @@ function App() {
               <div className="flex items-center justify-center lg:justify-start mb-6">
                 <GraduationCap className="w-5 h-5 text-blue-600 mr-2" />
                 <p className="text-lg text-blue-600 font-medium">
-                  Pre-Junior at Drexel University | Computer Engineering
-                </p>
+                  Pre-Junior at Drexel University
+                </p> 
               </div>
               <p className="text-lg text-slate-500 mb-8 max-w-2xl">
                 Passionate about bridging software and hardware development through hands-on engineering. 
@@ -200,22 +200,19 @@ function App() {
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-2xl font-semibold text-slate-800 mb-6">My Journey</h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                As a pre-junior at Drexel University studying Computer Engineering, I'm passionate about the intersection of software and hardware design. 
-                My academic foundation combined with hands-on project experience has given me the tools to tackle complex engineering challenges from multiple angles.
-              </p>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                I'm drawn to building solutions that bridge the digital and physical worlds—from developing responsive web applications to programming microcontrollers and designing embedded systems. 
-                My goal is to create technology that's not just functional, but reliable and user-centered.
-              </p>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                Through my coursework and co-op experiences, I'm developing expertise in both software engineering practices and hardware design principles. 
-                I believe the future of technology lies in seamless integration between these domains.
-              </p>
-              <p className="text-slate-600 leading-relaxed">
-                When I'm not coding or working on circuit designs, you'll find me on the basketball court, playing soccer, diving into mythology books, or building elaborate LEGO creations.
-              </p>
+            <h3 className="text-2xl font-semibold text-slate-800 mb-6">About Me</h3>
+            <p className="text-slate-600 mb-6 leading-relaxed">
+              I’m a pre-junior studying Computer Engineering at Drexel University, fascinated by how software and hardware can work together. My interest kicked off in high school during my freshman year in robotics club, where I first got my hands on code and circuits. Building robots that could navigate and respond to their environment showed me the power of integrating the two, and it set me on this path.
+            </p>
+            <p className="text-slate-600 mb-6 leading-relaxed">
+              I enjoy creating solutions that bridge the digital and physical—whether it’s coding clean web apps or designing embedded systems with microcontrollers. My coursework and co-op experiences are helping me build skills to solve tough problems, always aiming for tech that’s reliable and user-friendly.
+            </p>
+            <p className="text-slate-600 mb-6 leading-relaxed">
+              My goal is to work on projects where software and hardware blend seamlessly, from automation to real-time systems. I’m exploring roles in software engineering and hardware-software integration to make that happen.
+            </p>
+            <p className="text-slate-600 leading-relaxed">
+              Outside of tech, I’m usually playing basketball or soccer, reading mythology books, or building intricate LEGO sets.
+            </p>
 
               {/* Education Info */}
               <div className="mt-8 p-6 bg-blue-50 rounded-lg border-l-4 border-blue-600">
@@ -224,6 +221,7 @@ function App() {
                   <h4 className="text-lg font-semibold text-slate-800">Education</h4>
                 </div>
                 <p className="text-slate-700 font-medium">Bachelor of Science in Computer Engineering</p>
+                <p className="text-slate-700 font-medium">Minor in Software Engineering</p>
                 <p className="text-slate-600">Drexel University • Pre-Junior Status</p>
                 <p className="text-slate-600 text-sm mt-1">Philadelphia, PA • Expected Graduation: 2028</p>
               </div>
