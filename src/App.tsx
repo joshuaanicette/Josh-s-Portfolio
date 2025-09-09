@@ -1,7 +1,56 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, MapPin, Calendar, Code, Briefcase, User, Phone } from 'lucide-react';
 
 function App() {
+  const [isDownloading, setIsDownloading] = useState(false);
+  const [downloadError, setDownloadError] = useState<string | null>(null);
+
+  const handleDownloadResume = async () => {
+    setIsDownloading(true);
+    setDownloadError(null);
+    
+    try {
+      // Method 1: If you have a PDF file in your public folder
+      const response = await fetch('/Joshua_Anicette_Resume.pdf');
+      
+      if (!response.ok) {
+        throw new Error('Resume not found');
+      }
+      
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      
+      link.href = url;
+      link.download = 'Joshua_Anicette_Resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      // Clean up the URL object
+      window.URL.revokeObjectURL(url);
+    } catch (err) {
+      setDownloadError('Failed to download resume. Please try again.');
+      console.error('Download error:', err);
+      
+      // Fallback: Simple download from public folder
+      try {
+        const link = document.createElement('a');
+        link.href = '/Joshua_Anicette_Resume.pdf';
+        link.download = 'Joshua_Anicette_Resume.pdf';
+        link.target = '_blank';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        setDownloadError(null);
+      } catch (fallbackErr) {
+        console.error('Fallback download failed:', fallbackErr);
+      }
+    } finally {
+      setIsDownloading(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Navigation */}
@@ -52,13 +101,20 @@ function App() {
                 Ready to bring clean code, thoughtful design, and real-world reliability to your team.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-lg">
-                  Download Resume
+                <button 
+                  onClick={handleDownloadResume}
+                  disabled={isDownloading}
+                  className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-lg disabled:bg-blue-400 disabled:cursor-not-allowed"
+                >
+                  {isDownloading ? 'Downloading...' : 'Download Resume'}
                 </button>
                 <a href="#contact" className="px-8 py-3 border-2 border-slate-300 text-slate-700 font-semibold rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors">
                   Get In Touch
                 </a>
               </div>
+              {downloadError && (
+                <p className="text-red-500 text-sm mt-3 text-center lg:text-left">{downloadError}</p>
+              )}
             </div>
           </div>
         </div>
@@ -78,7 +134,7 @@ function App() {
             <div>
               <h3 className="text-2xl font-semibold text-slate-800 mb-6">My Story</h3>
               <p className="text-slate-600 mb-6 leading-relaxed">
-              I’m a builder at heart, working across software and hardware design to turn messy, real-world problems into clear, usable tools. 
+              I'm a builder at heart, working across software and hardware design to turn messy, real-world problems into clear, usable tools. 
               On the software side, I deliver responsive UIs and dependable back ends; on the hardware side, I prototype with microcontrollers and sensors and design systems that bridge devices to the web.
               </p>
               <p className="text-slate-600 mb-6 leading-relaxed">
@@ -86,8 +142,8 @@ function App() {
               My interests span full-stack development, embedded systems, and the places they meet (automation, data, and real-time feedback).
               </p>
               <p className="text-slate-600 leading-relaxed">
-              I’m exploring roles across software engineering and hardware-software integration. 
-              When I’m not coding or designing, I’m playing basketball and soccer, reading mythology books, and building LEGO.
+              I'm exploring roles across software engineering and hardware-software integration. 
+              When I'm not coding or designing, I'm playing basketball and soccer, reading mythology books, and building LEGO.
               </p>
             </div>
 
