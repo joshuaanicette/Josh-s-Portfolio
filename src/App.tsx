@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, ExternalLink, MapPin, Calendar, Code, Briefcase, User, Phone, ChevronDown } from 'lucide-react';
+import { Github, Linkedin, Mail, ExternalLink, MapPin, Calendar, Code, Briefcase, User, Phone, ChevronDown, GraduationCap } from 'lucide-react';
 
 function App() {
   const [isDownloading, setIsDownloading] = useState(false);
@@ -129,12 +129,18 @@ function App() {
               <h1 className="text-4xl lg:text-6xl font-bold text-slate-800 mb-4">
                 Hi, I'm <span className="text-blue-600">Joshua Anicette</span>
               </h1>
-              <p className="text-xl lg:text-2xl text-slate-600 mb-6">
-                Computer Engineer & Software Developer
+              <p className="text-xl lg:text-2xl text-slate-600 mb-4">
+                Computer Engineering Student & Software Developer
               </p>
+              <div className="flex items-center justify-center lg:justify-start mb-6">
+                <GraduationCap className="w-5 h-5 text-blue-600 mr-2" />
+                <p className="text-lg text-blue-600 font-medium">
+                  Pre-Junior at Drexel University | Computer Engineering
+                </p>
+              </div>
               <p className="text-lg text-slate-500 mb-8 max-w-2xl">
-                Software engineer by craft, computer engineer by toolkit—bridging cloud services with embedded systems. 
-                Ready to bring clean code, thoughtful design, and real-world reliability to your team.
+                Passionate about bridging software and hardware development through hands-on engineering. 
+                Currently pursuing computer engineering with aspirations to build innovative solutions that span from embedded systems to cloud applications.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 {/* Resume Download Dropdown */}
@@ -188,25 +194,39 @@ function App() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">About Me</h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Learn more about my background, skills, and what drives my passion for technology
+              Learn more about my academic journey, technical skills, and passion for engineering innovation
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-2xl font-semibold text-slate-800 mb-6">My Story</h3>
+              <h3 className="text-2xl font-semibold text-slate-800 mb-6">My Journey</h3>
               <p className="text-slate-600 mb-6 leading-relaxed">
-              I'm a builder at heart, working across software and hardware design to turn messy, real-world problems into clear, usable tools. 
-              On the software side, I deliver responsive UIs and dependable back ends; on the hardware side, I prototype with microcontrollers and sensors and design systems that bridge devices to the web.
+                As a pre-junior at Drexel University studying Computer Engineering, I'm passionate about the intersection of software and hardware design. 
+                My academic foundation combined with hands-on project experience has given me the tools to tackle complex engineering challenges from multiple angles.
               </p>
               <p className="text-slate-600 mb-6 leading-relaxed">
-              I like owning features end-to-end—scoping requirements, prototyping, measuring impact, and iterating for reliability and great UX. 
-              My interests span full-stack development, embedded systems, and the places they meet (automation, data, and real-time feedback).
+                I'm drawn to building solutions that bridge the digital and physical worlds—from developing responsive web applications to programming microcontrollers and designing embedded systems. 
+                My goal is to create technology that's not just functional, but reliable and user-centered.
+              </p>
+              <p className="text-slate-600 mb-6 leading-relaxed">
+                Through my coursework and co-op experiences, I'm developing expertise in both software engineering practices and hardware design principles. 
+                I believe the future of technology lies in seamless integration between these domains.
               </p>
               <p className="text-slate-600 leading-relaxed">
-              I'm exploring roles across software engineering and hardware-software integration. 
-              When I'm not coding or designing, I'm playing basketball and soccer, reading mythology books, and building LEGO.
+                When I'm not coding or working on circuit designs, you'll find me on the basketball court, playing soccer, diving into mythology books, or building elaborate LEGO creations.
               </p>
+
+              {/* Education Info */}
+              <div className="mt-8 p-6 bg-blue-50 rounded-lg border-l-4 border-blue-600">
+                <div className="flex items-center mb-2">
+                  <GraduationCap className="w-5 h-5 text-blue-600 mr-2" />
+                  <h4 className="text-lg font-semibold text-slate-800">Education</h4>
+                </div>
+                <p className="text-slate-700 font-medium">Bachelor of Science in Computer Engineering</p>
+                <p className="text-slate-600">Drexel University • Pre-Junior Status</p>
+                <p className="text-slate-600 text-sm mt-1">Philadelphia, PA • Expected Graduation: 2028</p>
+              </div>
             </div>
 
             <div>
@@ -232,7 +252,7 @@ function App() {
                 </div>
                 <div>
                   <div className="flex justify-between items-center mb-2">
-                    <span className="font-medium text-slate-700">Hardware Design</span>
+                    <span className="font-medium text-slate-700">Hardware Design & Embedded Systems</span>
                     <span className="text-sm text-slate-500">75%</span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
@@ -249,6 +269,29 @@ function App() {
                   </div>
                 </div>
               </div>
+
+              {/* Career Aspirations */}
+              <div className="mt-8">
+                <h4 className="text-lg font-semibold text-slate-800 mb-4">Career Aspirations</h4>
+                <div className="space-y-3">
+                  <div className="flex items-start">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <p className="text-slate-600">Full-stack software development with focus on scalable web applications</p>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <p className="text-slate-600">Embedded systems engineering and IoT device development</p>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <p className="text-slate-600">Hardware-software integration for innovative tech solutions</p>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <p className="text-slate-600">Product engineering roles that combine technical depth with user impact</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -260,7 +303,7 @@ function App() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Experience</h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              My professional journey and key accomplishments
+              My professional journey and key accomplishments in software and logistics
             </p>
           </div>
 
@@ -306,7 +349,7 @@ function App() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Featured Projects</h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              A showcase of my recent work and personal projects
+              A showcase of my recent work bridging software development and hardware engineering
             </p>
           </div>
 
@@ -347,8 +390,8 @@ function App() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-slate-800 mb-2">Focus Assistant Tracker</h3>
                 <p className="text-slate-600 mb-4">
-                A focus-tracking assistant with real-time distraction alerts, session analytics, and a web dashboard. 
-                Built for edge reliability and low-latency performance.
+                A hardware-software focus tracking system with real-time distraction alerts, session analytics, and web dashboard. 
+                Demonstrates embedded systems integration with web technologies.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-3 py-1 bg-yellow-100 text-yellow-700 text-sm rounded-full">Python (Flask)</span>
@@ -406,7 +449,7 @@ function App() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">Let's Work Together</h2>
             <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-            Ready to work and give insight into computer engineering and software development—building reliable systems from silicon to server
+            Ready to contribute fresh perspectives in computer engineering and software development—building innovative solutions from hardware fundamentals to software applications
             </p>
           </div>
 
