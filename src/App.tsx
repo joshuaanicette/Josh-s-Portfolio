@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+ import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, MapPin, Calendar, Code, Briefcase, User, Phone, ChevronDown, GraduationCap } from 'lucide-react';
 
 function App() {
@@ -211,7 +211,8 @@ function App() {
               My goal is to work on projects where software and hardware blend seamlessly, from automation to real-time systems. I’m exploring roles in software engineering and hardware-software integration to make that happen.
             </p>
             <p className="text-slate-600 leading-relaxed">
-              Outside of tech, I’m usually playing basketball or soccer, reading mythology books, or building intricate LEGO sets.
+              Outside of tech, we could see me outside playing favorite sports, basketball or soccer. I also like to collect LEGOS espeically one designed as cars or Marvel affiliated. If you have hip hop, r&b, or blues vinyl,
+            you send them to me as I can never have to much of them.  
             </p>
 
               {/* Education Info */}
