@@ -211,8 +211,7 @@ function App() {
               My goal is to work on projects where software and hardware blend seamlessly, from automation to real-time systems. I’m exploring roles in software engineering and hardware-software integration to make that happen.
             </p>
             <p className="text-slate-600 leading-relaxed">
-              Outside of tech, we could see me outside playing favorite sports, basketball or soccer. I also like to collect LEGOS espeically one designed as cars or Marvel affiliated. If you have hip hop, r&b, or blues vinyl,
-            you send them to me as I can never have to much of them.  
+              Outside of tech, you can usually find me out playing basketball or soccer—my go-to sports whenever I need a break. I’m also a big LEGO fan, especially the sets built as cars or anything Marvel-related. I’ve always been a huge fan of Spider-Man, the Flash, and both fictional and real-world mythology. Music’s another big part of my life—if you’ve got any hip hop, R&B, or blues vinyl, send them my way; I can never have too many.
             </p>
 
               {/* Education Info */}
