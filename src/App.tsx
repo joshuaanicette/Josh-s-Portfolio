@@ -17,7 +17,7 @@ function App() {
     },
     { 
       name: 'Hardware Engineering Resume', 
-      filename: 'Joshuas_Computer_Engineering_COOP_Resume.pdf',
+      filename: 'Joshuas_Computer_Engineering_COOP_Resume_(6).pdf',
       description: 'Embedded systems, microcontrollers, and hardware design',
       icon: '⚡',
       color: 'from-green-500 to-teal-600'
