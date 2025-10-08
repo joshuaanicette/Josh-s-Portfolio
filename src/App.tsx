@@ -10,7 +10,7 @@ function App() {
   const resumeOptions = [
     { 
       name: 'Software Engineering Resume', 
-      filename: 'Joshuas_Software_Engineering_COOP_Resume(2).pdf',
+      filename: 'Joshuas_Software_Engineering_COOP_Resume_(2).pdf',
       description: 'Full-stack development, web applications, and software architecture',
       icon: '💻',
       color: 'from-blue-500 to-purple-600'
