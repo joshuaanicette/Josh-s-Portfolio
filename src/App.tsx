@@ -325,15 +325,15 @@ function App() {
               <ul className="space-y-2 text-slate-600">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Used KiwiPlan ERP system to enter and validate 50+ bills of lading daily, improving packaging distribution accuracy by 15% and reducing shipment cycle time by 10% in a high-throughput logistics environment
+                 Leveraged KiwiPlan ERP remotely via PuTTY/SSH, executing CLI commands to process and validate 50+ bills of lading daily, improving accuracy by 15% and reducing data-entry time by 20%.
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Executed backend trailer load transfers for 20+ trailers per shift within KiwiPlan, streamlining dispatch coordination and achieving a 98% on-time delivery rate while reducing routing errors by 20%
+                 Automated and executed backend trailer load transfers for 20+ trailers per shift, streamlining dispatch coordination and achieving a 98% on-time delivery rate while cutting routing errors by 20%.
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Analyzed and modified workflow processes in KiwiPlan, leading a 12% reduction in processing time and improved cross-departmental coordination for box delivery operations
+                  Optimized cross-department workflows by identifying repetitive manual steps and applying shortcut-driven task sequences, resulting in a 12% reduction in processing time for box delivery operations.
                 </li>
               </ul>
             </div>
